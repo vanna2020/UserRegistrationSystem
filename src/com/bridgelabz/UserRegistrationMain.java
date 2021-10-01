@@ -16,6 +16,7 @@ import java.util.Scanner;
                 System.out.println("Enter 2 : to validate Last Name ");
                 System.out.println("Enter 3 : to validate E-mail Address ");
                 System.out.println("Enter 4 : to validate Mobile Number ");
+                System.out.println("Enter 5 : to validate Password Rule 1 ");
                 switch (scanner.nextInt()){
                     case 1:
                         UserRegistration.validFirstName();
@@ -28,6 +29,9 @@ import java.util.Scanner;
                         break;
                     case 4:
                         UserRegistration.validMobileNumber();
+                        break;
+                    case 5:
+                        UserRegistration.validPassRule1();
                         break;
                     default:
                         System.out.println("Select a valid number");
